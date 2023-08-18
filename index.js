@@ -18,7 +18,7 @@ app.use(
   })
 );
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/uploads', express.static('uploads'));
 // for the db
 const connectDB = require('./db/connection');
 connectDB();
