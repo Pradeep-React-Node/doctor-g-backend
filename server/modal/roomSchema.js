@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+
 const roomSchema = new mongoose.Schema({
   date: Date,
-  slots: [
+  timing: [
     {
       start: String,
       end: String,

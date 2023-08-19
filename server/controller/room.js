@@ -2,13 +2,13 @@ const Room = require('../modal/roomSchema');
 
 module.exports.add_room = async function (req, res) {
   console.log('adding room', req.body);
-  try {
-    const newRoom = new Room(req.body);
-    await newRoom.save();
-    res.status(201).json(newRoom);
-  } catch (error) {
-    res.status(500).json({ error: 'Error creating room' });
-  }
+  // try {
+  //   const newRoom = new Room(req.body);
+  //   await newRoom.save();
+  //   res.status(201).json(newRoom);
+  // } catch (error) {
+  //   res.status(500).json({ error: 'Error creating room' });
+  // }
 };
 
 module.exports.get_rooms = async function (req, res) {
